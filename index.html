@@ -1,0 +1,118 @@
+<!Doctype html>
+<html>
+    <head>
+        <style>
+            body{
+                background: url("pics/back3.jpeg");
+                
+                background-size: cover;
+                color:white;
+                font-size: 20px;
+            }
+
+            form{
+                
+                text-align: center;
+            }
+            input{
+                width:50%;
+            }
+            select{
+                width:50%;
+                
+            }
+            button{
+                
+                width:80px;
+            }
+        </style>
+
+    </head>
+    <body>
+        
+
+        <form>
+
+            <h2>Spirit Animal Guide</h2>
+        <p>Fill in the textboxes below to find out about your Spirit Animal Guide</p>
+            <label for fname>First Name:</label>
+            <input type="text" id="fname" required><br>
+
+            <label for lname>Last Name:</label>
+            <input type="text" id="fname" value="optional"><br>
+
+
+            <label for birtmonth>Birth Month:</label>
+            
+            <select id="birthmonth" name="months" required>
+                <option id="month1" value="1">January</option>
+                <option id="month2" value="2">February</option>
+                <option id="month" value="3">March</option>
+                <option id="month" value="4">April</option>
+                <option id="month" value="5">May</option>
+                <option id="month" value="6">June</option>
+                <option id="month" value="7">July</option>
+                <option id="month" value="8">August</option>
+                <option id="month" value="9">September</option>
+                <option id="month" value="10">October</option>
+                <option id="month" value="11">November</option>
+                <option id="month" value="12">December</option>
+            </select><br>
+
+            <button onclick ="spiritAnimal()" type="submit" id="submit">Check</button>
+
+
+        </form><br><br><br>
+       
+
+        <script>
+             
+
+        function spiritAnimal(){
+            if (document.getElementById("birthmonth").value === "1"){
+  alert("Your Spirit animal is a lion ");}
+
+  else if (document.getElementById("birthmonth").value === "2"){
+  alert("Your Spirit animal is a cheetah ");
+}
+else if (document.getElementById("birthmonth").value==="3"){
+    alert("Your Spirit animal is a bear ");
+}
+else if (document.getElementById("birthmonth").value === "4"){
+  alert("Your Spirit animal is a wolf ");}
+
+  else if (document.getElementById("birthmonth").value === "5"){
+  alert("Your Spirit animal is a fox ");
+}
+else if (document.getElementById("birthmonth").value==="6"){
+    alert("Your Spirit animal is a cat ");
+}
+
+else if (document.getElementById("birthmonth").value === "7"){
+  alert("Your Spirit animal is a Dog ");}
+
+  else if (document.getElementById("birthmonth").value === "8"){
+  alert("Your Spirit animal is a Tiger ");
+}
+else if (document.getElementById("birthmonth").value==="9"){
+    alert("Your Spirit animal is a Antelope ");
+}
+
+else if (document.getElementById("birthmonth").value === "10"){
+  alert("Your Spirit animal is a Gazelle ");}
+
+  else if (document.getElementById("birthmonth").value === "11"){
+  alert("Your Spirit animal is a Humming Bird ");
+}
+else if (document.getElementById("birthmonth").value==="12"){
+    alert("Your Spirit animal is a Gorilla ");
+}
+
+  }
+
+
+ </script>
+
+
+    </body>
+</html>
