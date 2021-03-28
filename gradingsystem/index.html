@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <style>
+            body{
+                background-color: rgb(218, 218, 158);
+            }
+            form{
+                text-align: center;
+                padding-top: 5%;
+            }
+            
+
+
+        </style>
+    </head>
+    <body>
+        
+       
+            <form>
+                <h2>Grading System</h2>
+                
+                <label for myInput>First Name</label>
+            <input type="text" id="myInput"><br><br>
+
+            <label for myInput2>Last Name</label>
+            <input type="text" id="myInput2"><br><br>
+
+            <label for myInput3>Average Marks</label>
+            <input type="text"  id="myInput3"><br><br>
+
+    <button type="button" onclick="getInputValue();">Check Grade</button>
+            </form>
+    <script>
+        function getInputValue(){
+            var inputVal = document.getElementById("myInput").value;
+            var inputMarks =document.getElementById("myInput3").value;
+            if(inputMarks>=80){
+              alert("Hello "+inputVal+". Your average grade is A");
+            }
+            else if(inputMarks>=70){
+              alert("Hello "+inputVal+". Your average grade is B")
+            }
+            else if(inputMarks>=60){
+              alert("Hello "+inputVal+". Your average grade is C")
+            }
+            else if(inputMarks>=50){
+              alert("Hello "+inputVal+". Your average grade is D")
+            }
+            else if(inputMarks>=40){
+              alert("Hello "+inputVal+". Your average grade is E")
+            }
+            else{
+                alert("Hello "+inputVal+". Input valid Marks")
+            }
+
+
+        }
+    </script>
+        
+            
+        
+
+    </body>
+</html>
