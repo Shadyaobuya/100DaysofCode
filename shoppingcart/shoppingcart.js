@@ -1,4 +1,5 @@
 //a program that creats an object myCart and gives it properties and functionality
+
 var myCart={                                                //store the items that can be bought in the cart in an array
     fruits:["mango", "orange", "pineapple","apple"],          //declare property quantity and initialise it to 0
     quantity:0,                                             //initialise the quantity property to 0
@@ -20,21 +21,21 @@ var myCart={                                                //store the items th
         this.fruits.forEach((fruit) => {                  //loop through each item in the array
             
             
-            if (fruitName==="mango"){
+            if ((fruit&&fruitName)==="mango"){                      //loops through first fruit in array
                var totalCost=30*totalItems;
-            console.log("The total cost of mangoes bought is "+totalCost);
+            console.log("The total cost of mangoes bought is "+totalCost);    
             
          }
-         else if (fruitName==="orange"){
+         else if ((fruit&&fruitName)==="orange"){                   //loops through second fruit in array
             totalCost=20*totalItems;
             console.log("The total cost of oranges bought is "+totalCost);
         }
 
-        else if (fruitName==="pineapple"){
+        else if ((fruit&&fruitName)==="pineapple"){                                   //loops through third fruit in array
            totalCost=50*totalItems;
           console.log("The total cost of pineapple bought is "+totalCost);
          }
-        else if(fruitName==="apple"){
+        else if((fruit&&fruitName)==="apple"){                                    //loops through fourth fruit in array
             totalCost=30*totalItems;                                                                                                                                                                                                                                                                                                                                                              
        
            console.log("The total cost of apples bought is "+totalCost);
@@ -50,8 +51,11 @@ var myCart={                                                //store the items th
     }
          
 
-myCart.addToCart(6);   //call function
-myCart.removeFromCart(2);
-myCart.calculatePrice("banana");
+myCart.addToCart(5
+    );   //call method addToCart
+myCart.removeFromCart(2);    //call method removeFromCart 
+myCart.calculatePrice("banana");   //call method calculatePrice
+
+
 
 
